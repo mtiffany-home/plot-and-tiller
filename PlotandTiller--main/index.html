@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plot and Tiller — Michael Tiffany</title>
+<meta name="description" content="Michael Tiffany — Product and Design Director, Principal Consultant. Systems thinking for complex digital platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #182530;
+    --paper: #EEE9DC;
+    --paper-warm: #E4DEC9;
+    --brass: #A66A32;
+    --line: #B9AF98;
+    --muted: #5C6B70;
+    --max-width: 640px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--brass); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- Hero ---------- */
+
+  header.hero {
+    padding: 88px 0 56px;
+    position: relative;
+  }
+
+  .mark {
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    margin: 0 0 40px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(2.1rem, 5vw, 3rem);
+    line-height: 1.08;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  .role {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: var(--brass);
+    margin: 0 0 28px;
+  }
+
+  .tagline {
+    font-size: 1.08rem;
+    color: var(--muted);
+    max-width: 46ch;
+    margin: 0;
+  }
+
+  /* plotted line accent */
+  .plot {
+    width: 100%;
+    height: 64px;
+    margin-top: 44px;
+  }
+  .plot path {
+    fill: none;
+    stroke: var(--brass);
+    stroke-width: 1.4;
+  }
+  .plot circle { fill: var(--brass); }
+
+  /* ---------- Sections ---------- */
+
+  section {
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin: 0 0 18px;
+  }
+
+  p { margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+
+  .approach {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .approach li {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 148px 1fr;
+    gap: 18px;
+  }
+  .approach li:first-child { border-top: none; padding-top: 0; }
+  .approach dt {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .approach dd {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  @media (max-width: 520px) {
+    .approach li { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  .sectors {
+    color: var(--muted);
+  }
+
+  footer {
+    padding: 40px 0 72px;
+    border-top: 1px solid var(--line);
+  }
+
+  footer a {
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+
+  footer .fine {
+    margin-top: 18px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="mark">Plot and Tiller</p>
+
+    <!-- EDIT: name & role -->
+    <h1>Mike Tiffany</h1>
+    <p class="role">Product &amp; Design Director — Principal Consultant</p>
+    <p class="tagline">Steering complex digital platforms toward simple, sustainable outcomes.</p>
+    <!-- /EDIT -->
+
+    <svg class="plot" viewBox="0 0 600 64" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,48 C90,50 130,10 210,22 C300,36 340,8 430,14 C500,18 540,44 600,30" />
+      <circle cx="600" cy="30" r="3.5"></circle>
+    </svg>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <!-- EDIT: bio -->
+    <p>With 15+ years of senior executive leadership in product, service design, and digital transformation, I help organisations turn ambitious business goals into scalable, sustainable software experiences.</p>
+    <p>My approach applies systems thinking to simplify complex digital platforms — grounded in evidence-based research, pragmatic AI integration, and executive facilitation. I work as a trusted advisor to senior leadership, translating strategy into products people can actually use.</p>
+    <!-- /EDIT -->
+  </section>
+
+  <section>
+    <h2>How I work</h2>
+    <!-- EDIT: approach items -->
+    <dl class="approach">
+      <li>
+        <dt>Systems thinking</dt>
+        <dd>Untangling complex platforms into structures that make sense to the people who build and use them.</dd>
+      </li>
+      <li>
+        <dt>Evidence-based research</dt>
+        <dd>Decisions grounded in what's actually happening, not assumption.</dd>
+      </li>
+      <li>
+        <dt>Pragmatic AI integration</dt>
+        <dd>Applying AI where it earns its place in the product, not as decoration.</dd>
+      </li>
+      <li>
+        <dt>Executive facilitation</dt>
+        <dd>Aligning leadership around a shared, workable direction.</dd>
+      </li>
+    </dl>
+    <!-- /EDIT -->
+  </section>
+
+  <section>
+    <h2>Track record</h2>
+    <!-- EDIT: experience -->
+    <p class="sectors">Trusted advisor to senior leadership, with a track record at consultancies including Thoughtworks — driving digital transformation across retail, publishing, healthcare, and the public sector.</p>
+    <!-- /EDIT -->
+  </section>
+
+  <footer>
+    <!-- EDIT: contact -->
+    <a id="contact-link" href="#">hello [at] plotandtiller.com</a>
+    <p class="fine">Plot and Tiller · Michael Tiffany</p>
+    <!-- /EDIT -->
+
+    <script>
+      // Builds the mailto link at runtime so scrapers reading raw HTML
+      // never see a plain email address or "mailto:" string.
+      (function () {
+        var user = 'hello';
+        var domain = 'plotandtiller.com';
+        var link = document.getElementById('contact-link');
+        link.setAttribute('href', 'mailto:' + user + '@' + domain);
+        link.textContent = user + '@' + domain;
+      })();
+    </script>
+  </footer>
+
+</div>
+
+</body>
+</html>
